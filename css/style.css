@@ -1,4 +1,33 @@
+/* Pagination Start */
+#pg1 {
+    
+}
 
+#pg2 {
+display: none;
+}
+
+#pg3 {
+display: none;
+}
+
+#pg4 {
+display: none;
+}
+
+#pg5 {
+display:none;
+}
+#pg6 {
+
+}
+#pg7 {
+
+}
+#pg8 {
+
+}
+/* Pagination End */
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -277,6 +306,7 @@
 
 
 /*** Fruits Start ***/
+
 .fruite .tab-class .nav-item a.active {
     background: var(--bs-secondary) !important;
 }
@@ -298,9 +328,11 @@
 }
 
 .fruite .fruite-item {
+	display: block;
     height: 100%;
     transition: 0.5s;
 }
+
 .fruite .fruite-item:hover {
     box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
 }
