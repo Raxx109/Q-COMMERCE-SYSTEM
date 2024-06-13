@@ -1,3 +1,14 @@
+
+CREATE DATABASE IF NOT EXISTS angsarapq;
+
+CREATE TABLE `item` 
+(
+  itemID int PRIMARY KEY AUTO_INCREMENT,
+  name varchar(50),
+  price int,
+  img varchar(50)
+);
+
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Bibingka','100','R.jpg');
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Sinugno','300','sinugno.jpg');
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Buko Pie','300','bukopie.jpg');
@@ -22,6 +33,31 @@ INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Binalay','150','binalay.jpg
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Kesong Puti','15','kes.jpg');
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Tilapia Dishes','150','tilap.jpg');
 INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Sinantulan','150','sinantol.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Kinilaw','150','kinilaw.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Lato','80','lato.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Camote Cue','15','Camote.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Tinapa','150','Tinapa.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Suman sa Lihiya','150','sumanlihiya.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Sumang Infanta','150','suman.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Minatamis na Saging','160','saging.jpg');
+INSERT INTO `item`( `name`, `price`, `img`) VALUES ('Bilo - Bilo','30','Bilo-bilo.jpg');
 
+CREATE TABLE `cart`
+(
+	cartitemID int PRIMARY KEY AUTO_INCREMENT,
+	cartID int,
+	itemID int UNIQUE,
+	quantity int
+);
 
-
+CREATE TABLE login
+(
+	userID int PRIMARY KEY AUTO_INCREMENT,
+	fname varchar(50) NOT NULL,
+  lname varchar(50) NOT NULL,
+  address varchar(50) NOT NULL,
+  email varchar(50) NOT NULL,
+  mobilenum varchar(50) NOT NULL,
+  password varchar(50) NOT NULL,
+  cpassword varchar(50) NOT NULL
+);
