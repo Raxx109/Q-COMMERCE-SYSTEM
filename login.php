@@ -11,8 +11,19 @@ if(isset($_POST['loginn'])){
 
    $select = mysqli_query($conn, "SELECT * FROM `login` WHERE email = '$email' AND password = '$pass'") or die('query failed');
    $row = mysqli_fetch_assoc($select);
-   $check_user = mysqli_num_rows($select);
 
+   if(mysqli_num_rows($select) > 0){
+      if($pass == $row["password"]){
+         $_SESSION["loginn"] = true;
+         $_SESSION["userID"] = $row["userID"];
+         header("Location: index.php");
+
+      }else{
+         $message[] = 'Wrong Password';
+      }
+}else{
+   $message[] = 'Please Sign Up!';
+}
 }
 
 ?>
@@ -22,13 +33,13 @@ if(isset($_POST['loginn'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     
 <div class="form-container">
   
-  <form action="index.php" method="post" enctype="multipart/form-data">
+  <form action=" " method="post" enctype="multipart/form-data">
      <h3>login now</h3>
      <?php
      if(isset($message)){

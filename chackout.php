@@ -162,10 +162,6 @@
                                 </div>
                             </div>
                             <div class="form-item">
-                                <label class="form-label my-3">Company Name<sup>*</sup></label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-item">
                                 <label class="form-label my-3">Address <sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="House Number Street Name">
                             </div>
@@ -262,7 +258,8 @@
                             </div>
                 
                             <div class="row g-4 text-center align-items-center justify-content-center pt-4">
-                                <button type="button" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">Place Order</button>
+                                <button type="button" onclick = "invoice()" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">Place Order</button>
+							
                             </div>
                         </div>
                     </div>
@@ -379,6 +376,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+	<script>
+		function invoice() {
+			window.location.href = "receipt.php";
+		}
+	</script>
     </body>
 
 </html>

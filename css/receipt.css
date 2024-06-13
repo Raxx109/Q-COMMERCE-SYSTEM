@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.receipt-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.company-details {
+    text-align: right;
+}
+
+.company-details h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-details p {
+    margin: 5px 0;
+}
+
+.recipient {
+    margin-top: 20px;
+}
+
+.recipient-title {
+    font-weight: bold;
+}
+
+.recipient-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.receipt-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.receipt-number {
+    background-color: #8bc34a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.transaction-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+text-align: left;
+}
+
+.items-table th {
+    background-color: #8bc34a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.items-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.items-table td:last-child {
+    text-align: center;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.summary p {
+    margin: 5px 0;
+}
+
+.payment-summary {
+    float: right;
+    text-align: right;
+}
+
+.payment-summary table {
+    margin-top: 10px;
+}
+
+.payment-summary td {
+    padding: 5px 0;
+}
+
+.payment-summary td:first-child {
+    padding-right: 20px;
+}
