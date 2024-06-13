@@ -93,7 +93,15 @@
 									}
 								?>
                             </a>
-                          
+                          <div class="nav-item dropdown">
+							<a href="javascript:void(0)"  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fas fa-user fa-2x"></i>
+								<div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="login.php" class="dropdown-item">Logout</a>
+                                    <a href="cart.php" class="dropdown-item">Cart</a>
+                                </div>
+							</a>
+							</div>
                         </div>
                     </div>
                 </nav>
