@@ -1592,7 +1592,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="img/wala.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    <img src="img/flow.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
                                     <h4 class="text-dark">J*** L*****</h4>
@@ -1619,7 +1619,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="img/wala.png" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    <img src="img/brown.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
                                     <h4 class="text-dark">S** M****</h4>
